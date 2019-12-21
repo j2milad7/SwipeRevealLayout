@@ -115,6 +115,14 @@ public class ViewBinderHelper {
     }
 
     /**
+     * Clear all swipeLayouts and their states.
+     */
+    public void clear() {
+        mapStates.clear();
+        mapLayouts.clear();
+    }
+
+    /**
      * Only if you need to restore open/close state when the orientation is changed.
      * Call this method in {@link android.app.Activity#onSaveInstanceState(Bundle)}
      */
